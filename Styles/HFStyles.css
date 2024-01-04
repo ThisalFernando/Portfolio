@@ -1,0 +1,92 @@
+.navbar {
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    background-color: black;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-left: -40px;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 1px;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: aqua;
+}
+
+ul li a:active {
+    color: #ff7200;
+}
+        
+.tbl1 {
+    background-color: black;
+}
+
+.me {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.welcome {
+    color: white;
+    font-family: Calibri;
+    margin-left: 45px;
+    font-size: 25px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.fa-github {
+    background: darkblue;
+    color: white;
+}
+
+hr {
+    width: 900px;
+}
