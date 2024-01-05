@@ -5,6 +5,10 @@
     text-align: center;
 }
 
+.bgimage{
+    height: 300vh;
+}
+
 .HRSeperate{
     border: 1px solid rgb(73, 73, 73);
     width: 500px;
@@ -36,5 +40,9 @@
 
     .HRSeperate{
         width: 350px;
+    }
+
+    .bgimage{
+        height: 200vh;
     }
 }
