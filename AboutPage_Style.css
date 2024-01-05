@@ -99,6 +99,10 @@
     animation: test 5s infinite;
 }
 
+.flex-container > div:hover{
+    transform: translateY(-10px);
+}
+
 @keyframes test {
     100% { flex: 1;}
   
