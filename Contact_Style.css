@@ -1,7 +1,6 @@
 form {
     width: 600px;
     height: 460px;
-    margin-left: 60px;
     padding: 30px;
     background-color: rgba(250,250, 250, 0.5);
     font-size: 17px;
@@ -35,7 +34,7 @@ h3{
 }
 
 .fa {
-    padding: 8px;
+    padding: 6px;
     font-size: 30px;
     width: 20px;
     text-align: center;
@@ -54,6 +53,14 @@ h3{
     height: 20px;
     border: 1px solid ghostwhite;
     background-color: ghostwhite;
+}
+
+#tel{
+    margin-left: 47px;
+}
+
+#email{
+    margin-left: 88px;
 }
 
 #issue {
@@ -86,4 +93,82 @@ h3{
         opacity: .3;
     }
 
+#btnn5{
+    width: 150px;
+    height: 40px;
+    background: aqua;
+    border: 2px solid aqua;
+    margin-left: 90px;
+    color: black;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: bold;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#btnn5:hover {
+    opacity: .3;
+}
+
+.contact2{
+    background-color: rgba(250,250, 250, 0.5); 
+    width: 650px; 
+    height: 520px; 
+    font-family: Calibri; 
+    font-size: 19px;
+}
+
+.link02{
+    font-family: Bahnschrift SemiBold;
+    font-size: 13px;
+}
+
+    @media(max-width: 600px){
+        form{
+            width: 300px;
+            height: 520px;
+        }
+
+        #fname, #lname, #tel, #email{
+            margin-left: 0px;
+        }
+
+        #issue{
+            width: 300px;
+        }
+
+        #btnn4, #btnn5{
+            margin-left:80px;
+        }
+
+        #btnn5{
+            margin-top: 15px;
+        }
+
+        .contact2{
+            width: 360px;
+        }
+
+        h3{
+            font-size: 18px;
+        }
+
+        .title2{
+            font-size: 15px;
+        }
+
+        .tel, .cEmail, .location{
+            font-size: 15px;
+        }
+
+        .fa{
+            padding: 3px;
+        }
+
+    }
 
