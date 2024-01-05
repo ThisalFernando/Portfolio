@@ -4,10 +4,6 @@
     color: Black;
 }
 
-.bgimage{
-    height: 540vh;
-}
-
 .text {
     position: absolute;
     top: 35%;
@@ -270,9 +266,5 @@
     #main_me{
         width: 300px;
         margin-left: 20px;
-    }
-
-    .bgimage{
-        height: 400px;
     }
 }
