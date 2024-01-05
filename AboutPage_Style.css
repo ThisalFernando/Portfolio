@@ -5,10 +5,6 @@
 }
 
 .bgimage{
-    width: 100%;
-    background: url('Image02.jpg');
-    background-position: center;
-    background-size: cover;
     height: 540vh;
 }
 
