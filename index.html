@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thisal Vihanga</title>
-    <script src="CV_JS.js"></script>
-    <link rel="stylesheet" type="text/css" href="HFStyles.css" />
-    <link rel="stylesheet" type="text/css" href="AboutPage_Style.css" />
+    <script src="JS/CV_JS.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/HFStyles.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/AboutPage_Style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
     <style>
@@ -15,10 +15,10 @@
         }
         .bgimage {
             width: 100%;
-            background: url('Image02.jpg');
+            background: url('Images/Image02.jpg');
             background-position: center;
             background-size: cover;
-            height: 485vh;
+            height: 540vh;
         }
     </style>
 </head>
@@ -33,7 +33,7 @@
                         </div>
                     </td>
                     <td rowspan="2">
-                        <div class="me" align="right"><img src="me.jpg" style="width: 200px; border-radius: 50%;"/></div>
+                        <div class="me" align="right"><img class="header" src="Images/me.jpg" /></div>
                     </td>
                 </tr>
                 <tr>
@@ -44,7 +44,6 @@
                             <li><a href="Experience.html">Experience</a></li>
                             <li><a href="Projects.html">Projects</a></li>
                             <li><a href="Contact.html">Contact</a></li>
-                            <li><a href="https://drive.google.com/file/d/1lh1-fRUBPoC9CIjiMKd8IR-eNi5sZ-ng/view?usp=drive_link"><button id="btn" onclick="return confirmMsg()">DOWNLOAD CV</button></a></li>
                         </ul>
                         </div>
                     </td>
@@ -55,7 +54,7 @@
         </div>
 
     <div class="container">
-        <img src="Image01.jpg" alt="Welcome" style="width:100%; height:300px; box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);">
+        <img src="Images/Image01.jpg" alt="Welcome" style="width:100%; height:300px; box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);">
         <div class="text">WELCOME TO THISAL VIHANGA</div>
         <div class="sub_text">If you are interest in Graphic Designing, Web  Designing and Software related things,</div>
         <div class="sub_text2">THIS IS THE CORRECT PLACE</div>
@@ -65,7 +64,7 @@
     <hr>
 
     <div class="topic1">ABOUT <span class="title1">ME</span></div>
-    <div class="me" align="center"><img class="zoom" src="me01.jpg" style="width: 500px;"/></div>
+    <div class="me1" align="center"><img class="zoom" id="main_me" src="Images/me01.jpg"/></div>
     <center>
         <table border="0" width="80%">
             <tr>
@@ -92,8 +91,11 @@
                 <hr class="flex1">
                 <br>
                 <span  class="sub_flex1">D.S. Senanayake College</span><br>
-                <span class="sub_cont">Colombo-07</span> 
+                <span class="sub_cont">Colombo-07</span>
             </div>
+        </div>
+        <br>
+        <div class="flex-container">
             <div>
                 <h3 class="main_flex1">Undergraduate</h3>
                 <hr class="flex1">
@@ -101,19 +103,22 @@
                 <span  class="sub_flex1">University of Kelaniya</span><br>
                 <span class="sub_cont">Computer Science</span> 
             </div>
+        </div>
+        <div class="flex-container">
             <div>
                 <h3 class="main_flex1">Interesting</h3>
                 <hr class="flex1">
                 <br>
                 <span  class="sub_flex1">Web Designing<br>Graphic Designing<br>Software Engineering</span><br>
-            </div>  
+            </div> 
         </div>
+
     </center>
     
     <br><br>
 
     <div class="container">
-        <img src="me02.jpg" width="100%" height="500px" style="box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);">
+        <img src="Images/me02.jpg" width="100%" height="500px" style="box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);">
         <div class="text2">
             <span class="text2_part1">BELIEVING</span><br>
             <span class="text2_part2">Your self</span><br>
@@ -136,8 +141,8 @@
             <br>
             <table style="border-spacing: 30px;">
                 <tr>
-                    <td><img src="Project01.jpg" class="zoom" width="250px" height="250px"></td>
-                    <td><img src="Project02.jpg" class="zoom" width="250px" height="250px"></td>
+                    <td><img src="Images/Project01.jpg" class="zoom" id="proj01" width="250px" height="250px"></td>
+                    <td><img src="Images/Project02.jpg" class="zoom" id="proj01" width="250px" height="250px"></td>
                 </tr>
                 <tr>
                     <td><span class="sub_cont"><a href="https://www.facebook.com/brgraphicdesigners/"><span class="link"><u>More about BR Graphics</u></span></a></span></td>
@@ -149,13 +154,17 @@
             <a href="https://github.com/ThisalFernando/" class="fa fa-github"></a>  
         </div>
     </div>
-    <br><br>
+    <br>
+    <center>
+    <p class="sub_cont" style="color: black;">If you need to know more about me</p>
+    <a href="https://drive.google.com/file/d/1lh1-fRUBPoC9CIjiMKd8IR-eNi5sZ-ng/view?usp=drive_link"><button id="btn" onclick="return confirmMsg()">DOWNLOAD CV</button></a>
+    </center><br>
 
     <div class="tbl1">
         <table border="0" width="100%" >
             <tr>
                 <td>
-                    <div class="me" align="center"><img src="me.jpg" style="width: 200px; border-radius: 50%; margin-top: 20px;"/></div>
+                    <div class="me" align="center"><img src="Images/me.jpg" style="width: 200px; border-radius: 50%; margin-top: 20px;"/></div>
                     <br>
                     <hr>
                     <center>
@@ -166,6 +175,7 @@
                         <a href="https://github.com/ThisalFernando/" class="fa fa-github"></a>
                     </center>
                     <br><br>
+                    <h5 class="footer">Copyright @ 2024 ThisalVihanga | All rights reserved. | <a href="brEngines.com">Powered by BrEngine</a></h5>
                 </td>
             </tr>
         </table>
