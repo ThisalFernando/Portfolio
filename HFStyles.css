@@ -1,3 +1,7 @@
+@media only screen and (max-width:600px){
+    
+}
+
 .navbar {
     width: 100%;
     height: 1px;
@@ -94,4 +98,45 @@ ul li a:active {
 
 hr {
     width: 900px;
+}
+
+.footer{
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 10px;
+}
+
+.header{
+    width: 200px; 
+    border-radius: 50%;
+}
+
+@media(max-width: 600px){
+    ul li{
+        font-size: 10px;
+    }
+
+    .welcome{
+        font-size: 15px;
+    }
+
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 2px;
+        border-radius: 50%;
+    }
+
+    .text3{
+        font-size: 13px;
+    }
+
+    .header{
+        width: 100px;
+        margin-top: -20px;
+    }
 }
