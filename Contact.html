@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <script src="Contact_JS.js"></script>
-    <script src="CV_JS.js"></script>
-    <link rel="stylesheet" type="text/css" href="HFStyles.css" />
-    <link rel="stylesheet" type="text/css" href="AboutPage_Style.css" />
-    <link rel="stylesheet" type="text/css" href="Contact_Style.css" />
+    <script src="JS/CV_JS.js"></script>
+    <script src="JS/Contact_JS.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/HFStyles.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/AboutPage_Style.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Contact_Style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,10 +18,10 @@
         }
         .bgimage {
             width: 100%;
-            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('me03.jpg');
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('Images/me03.jpg');
             background-position: center;
             background-size: cover;
-            height: 170vh;
+            height: 220vh;
         }
     </style>
 </head>
@@ -36,7 +36,7 @@
                         </div>
                     </td>
                     <td rowspan="2">
-                        <div class="me" align="right"><img src="me.jpg" style="width: 200px; border-radius: 50%;"/></div>
+                        <div class="me" align="right"><img class="header" src="Images/me.jpg" /></div>
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +47,6 @@
                             <li><a href="Experience.html">Experience</a></li>
                             <li><a href="Projects.html">Projects</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="https://drive.google.com/file/d/1lh1-fRUBPoC9CIjiMKd8IR-eNi5sZ-ng/view?usp=drive_link"><button id="btn" onclick="return confirmMsg()">DOWNLOAD CV</button></a></li>
                         </ul>
                         </div>
                     </td>
@@ -58,9 +57,9 @@
         </div>
         <br>
         <center>
-            <table border="0" width="100%">
+            <table border="0" class="form01">
                 <tr>
-                    <td colspan="2">
+                    <td>
                         <h1 class="contact">CONTACT <span class="title1">ME</span></h1>
                     </td>
                 </tr>
@@ -71,70 +70,67 @@
                             <Input type="text" name="fname" id="fname" value="" placeholder="FirstName" required><br><br>
     
                             <label>Enter your Last Name: </label>
-                            <Input type="text" name="lname" id="lname" style="margin-left: 55px;" value="" placeholder="LastName" required><br><br>
+                            <Input type="text" name="lname" id="lname" value="" placeholder="LastName" required><br><br>
     
                             <label>Enter your T.P Number: </label>
-                            <input type="text" name="tel" id="tel" style="margin-left: 47px;" value="" placeholder="Telephone Number" required><br><br>
+                            <input type="text" name="tel" id="tel" value="" placeholder="Telephone Number" required><br><br>
     
                             <label>Enter your Email: </label>
-                            <input type="email" name="email" id="email" style="margin-left: 88px;" value="" placeholder="Email" required><br><br>
+                            <input type="email" name="email" id="email" value="" placeholder="Email" required><br><br>
     
                             <label>Any Issues: </label><br>
                             <textarea name="issue" id="issue" placeholder="What you need?" required></textarea><br><br><br>
     
-                            <input type="submit" id="btnn4" name="btnn4" value="Submit">
-                            <input type="reset" id="btnn4" name="btnn4" value="Reset" onclick="promptButton()">
-                    </td>
-                    <td>
-                        <table border="0" style="background-color: rgba(250,250, 250, 0.5); width: 650px; height: 520px; font-family: Calibri; font-size: 19px;">
-                            <tr>
-                                <td colspan="2">
-                                    <h3>If you have any issues, please contact me!</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" class="fa fa-phone"></a><span class="title2">Contact Me:</span><br>
-                                    <div class="tel">
-                                    
-                                    0112-310958<br>
-                                    0704-993959<br>
-                                    0754-989432<br>
-                                    </div><br>
-                                </td>
-                                <td>
-                                   <a href="#" class="fa fa-map"></a><span class="title2">Location:</span><br>
-                                    <div class="location">
-                                    Thisal Vihanga,<br>
-                                    422/1/A,<br>
-                                    Heenkenda,<br>
-                                    Ragama<br>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" class="fa fa-envelope"></a><span class="title2">Email:</span><br>
-                                    <div class="cEmail">thisalvihanga85@gmail.com</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" class="fa fa-facebook"></a>/Thisal Fernando<br>
-                                    <a href="#" class="fa fa-twitter"></a> Thisal Fernando<br>
-                                    <a href="#" class="fa fa-instagram"></a> BR.Thisal<br>
-                                    <a href="#" class="fa fa-youtube"></a> BR_Productions<br>
-                                </td>
-                            </tr>
-                            <tr>
-                            </tr>
-                            <tr>
-                            </tr>
-                        </table>
+                            <input type="submit" id="btnn4" name="btn_Submit" value="Submit">
+                            <input type="reset" id="btnn5" name="btn_Reset" value="Reset" onclick="promptButton()">
                     </td>
                 </tr>
-    
-    
+            </table>
+            <br>
+            <table border="0" class="contact2">
+                <tr>
+                    <td colspan="2">
+                        <h3>If you have any issues, please contact me!</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="fa fa-phone"></a><span class="title2">Contact Me:</span><br>
+                        <div class="tel">
+                        
+                        0112-310958<br>
+                        0704-993959<br>
+                        0754-989432<br>
+                        </div><br>
+                    </td>
+                    <td>
+                       <a href="#" class="fa fa-map"></a><span class="title2">Location:</span><br>
+                        <div class="location">
+                        Thisal Vihanga,<br>
+                        422/1/A,<br>
+                        Heenkenda,<br>
+                        Ragama<br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="fa fa-envelope"></a><span class="title2">Email:</span><br>
+                        <div class="cEmail">thisalvihanga85@gmail.com</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="fa fa-facebook"></a><span class="link02">/Thisal Fernando</span><br>
+                        <a href="#" class="fa fa-twitter"></a><span class="link02">/Thisal Fernando</span><br>
+                        <a href="#" class="fa fa-instagram"></a><span class="link02"> BR.Thisal</span><br>
+                        <a href="#" class="fa fa-youtube"></a><span class="link02"> BR_Productions</span><br>
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
             </table>
             </center>
 
@@ -145,7 +141,7 @@
             <table border="0" width="100%" >
                 <tr>
                     <td>
-                        <div class="me" align="center"><img src="me.jpg" style="width: 200px; border-radius: 50%; margin-top: 20px;"/></div>
+                        <div class="me" align="center"><img src="Images/me.jpg" style="width: 200px; border-radius: 50%; margin-top: 20px;"/></div>
                         <br>
                         <hr>
                         <center>
@@ -156,6 +152,7 @@
                             <a href="https://github.com/ThisalFernando/" class="fa fa-github"></a>
                         </center>
                         <br><br>
+                        <h5 class="footer">Copyright @ 2024 ThisalVihanga | All rights reserved. | <a href="brEngines.com">Powered by BrEngine</a></h5>
                     </td>
                 </tr>
             </table>
