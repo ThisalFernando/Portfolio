@@ -44,6 +44,15 @@
     text-align: center;
 }
 
+#proj02{
+    width: 200px;
+    height: 200px;
+}
+
+.project_tbl{
+    border-spacing: 30px;
+}
+
 .mySlides {
     display: none
 }
@@ -131,5 +140,29 @@ img {
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
         font-size: 11px
+    }
+}
+
+@media(max-width: 600px){
+    .topic1{
+        font-size: 25px;
+    }
+
+    .title2{
+        font-size: 20px;
+    }
+
+    .para2{
+        font-size: 10px;
+    }
+
+    #proj02{
+        margin-left: -5px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .project_tbl{
+        border-spacing: 5px;
     }
 }
